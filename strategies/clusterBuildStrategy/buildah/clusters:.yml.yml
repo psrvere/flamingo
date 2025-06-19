@@ -1,0 +1,84 @@
+clusters:
+- cluster:
+    server: https://api.kntds-ety37-ssg.5gpz.p3.openshiftapps.com:443
+  name: api-kntds-ety37-ssg-5gpz-p3-openshiftapps-com:443
+- cluster:
+    server: https://api.pjcc6-oj25r-mws.x3k8.p3.openshiftapps.com:443
+  name: api-pjcc6-oj25r-mws-x3k8-p3-openshiftapps-com:443
+- cluster:
+    server: https://api.qdgqv-vddcc-pui.zg78.p3.openshiftapps.com:443
+  name: api-qdgqv-vddcc-pui-zg78-p3-openshiftapps-com:443
+- cluster:
+    server: https://api.s2jzd-f8ewj-8wo.kuzp.p3.openshiftapps.com:443
+  name: api-s2jzd-f8ewj-8wo-kuzp-p3-openshiftapps-com:443
+- cluster:
+    server: https://api.tuh9s-w6o2m-poi.bx0m.p3.openshiftapps.com:443
+  name: api-tuh9s-w6o2m-poi-bx0m-p3-openshiftapps-com:443
+- cluster:
+    server: https://api.yscm7-7bfhh-h2e.jm24.p3.openshiftapps.com:443
+  name: api-yscm7-7bfhh-h2e-jm24-p3-openshiftapps-com:443
+- cluster:
+    certificate-authority-data: DATA+OMITTED
+    server: https://127.0.0.1:58414
+  name: kind-kind
+contexts:
+- context:
+    cluster: api-kntds-ety37-ssg-5gpz-p3-openshiftapps-com:443
+    namespace: default
+    user: cluster-admin/api-kntds-ety37-ssg-5gpz-p3-openshiftapps-com:443
+  name: default/api-kntds-ety37-ssg-5gpz-p3-openshiftapps-com:443/cluster-admin
+- context:
+    cluster: api-pjcc6-oj25r-mws-x3k8-p3-openshiftapps-com:443
+    namespace: default
+    user: cluster-admin/api-pjcc6-oj25r-mws-x3k8-p3-openshiftapps-com:443
+  name: default/api-pjcc6-oj25r-mws-x3k8-p3-openshiftapps-com:443/cluster-admin
+- context:
+    cluster: api-qdgqv-vddcc-pui-zg78-p3-openshiftapps-com:443
+    namespace: default
+    user: cluster-admin/api-qdgqv-vddcc-pui-zg78-p3-openshiftapps-com:443
+  name: default/api-qdgqv-vddcc-pui-zg78-p3-openshiftapps-com:443/cluster-admin
+- context:
+    cluster: api-s2jzd-f8ewj-8wo-kuzp-p3-openshiftapps-com:443
+    namespace: default
+    user: cluster-admin/api-s2jzd-f8ewj-8wo-kuzp-p3-openshiftapps-com:443
+  name: default/api-s2jzd-f8ewj-8wo-kuzp-p3-openshiftapps-com:443/cluster-admin
+- context:
+    cluster: api-tuh9s-w6o2m-poi-bx0m-p3-openshiftapps-com:443
+    namespace: default
+    user: cluster-admin/api-tuh9s-w6o2m-poi-bx0m-p3-openshiftapps-com:443
+  name: default/api-tuh9s-w6o2m-poi-bx0m-p3-openshiftapps-com:443/cluster-admin
+- context:
+    cluster: api-yscm7-7bfhh-h2e-jm24-p3-openshiftapps-com:443
+    namespace: default
+    user: cluster-admin/api-yscm7-7bfhh-h2e-jm24-p3-openshiftapps-com:443
+  name: default/api-yscm7-7bfhh-h2e-jm24-p3-openshiftapps-com:443/cluster-admin
+- context:
+    cluster: kind-kind
+    user: kind-kind
+  name: kind-kind
+current-context: kind-kind
+kind: Config
+preferences: {}
+users:
+- name: cluster-admin/api-kntds-ety37-ssg-5gpz-p3-openshiftapps-com:443
+  user:
+    token: REDACTED
+- name: cluster-admin/api-pjcc6-oj25r-mws-x3k8-p3-openshiftapps-com:443
+  user:
+    token: REDACTED
+- name: cluster-admin/api-qdgqv-vddcc-pui-zg78-p3-openshiftapps-com:443
+  user:
+    token: REDACTED
+- name: cluster-admin/api-s2jzd-f8ewj-8wo-kuzp-p3-openshiftapps-com:443
+  user:
+    token: REDACTED
+- name: cluster-admin/api-tuh9s-w6o2m-poi-bx0m-p3-openshiftapps-com:443
+  user:
+    token: REDACTED
+- name: cluster-admin/api-yscm7-7bfhh-h2e-jm24-p3-openshiftapps-com:443
+  user:
+    token: REDACTED
+- name: kind-kind
+  user:
+    client-certificate-data: DATA+OMITTED
+    client-key-data: DATA+OMITTED

@@ -1,0 +1,15 @@
+apiVersion: shipwright.io/v1beta1
+kind: Build
+metadata:
+  name: buildah-golang-stage-build
+spec:
+  source:
+    type: Git
+    git:
+      url: https://github.com/shipwright-io/sample-go
+    contextDir: docker-build-with-broken-final-stage
+  strategy:
+    name: buildah
+    kind: ClusterBuildStrategy
+  output:
+    image: ttl.sh/sample-go:2h
