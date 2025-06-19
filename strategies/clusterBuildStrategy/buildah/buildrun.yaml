@@ -1,0 +1,12 @@
+apiVersion: shipwright.io/v1beta1
+kind: BuildRun
+metadata:
+  generateName: buildah-golang-stage-buildrun-
+spec:
+  build:
+    name: buildah-golang-stage-build
+  paramValues:
+  - name: dockerfile
+    value: Dockerfile
+  - name: target
+    value: working-final
